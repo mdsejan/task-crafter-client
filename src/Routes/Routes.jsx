@@ -4,6 +4,8 @@ import Home from "../pages/Home/Home";
 import DashboardLayout from "../pages/Layout/DashboardLayout";
 import UserDashboard from "../pages/Dashboard/UserDashboard";
 import Error from "../pages/shared/Error/Error";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,7 @@ const router = createBrowserRouter([
       },
     ],
   },
+
   {
     path: "dashboard",
     errorElement: <Error></Error>,
@@ -28,6 +31,17 @@ const router = createBrowserRouter([
         element: <UserDashboard></UserDashboard>,
       },
     ],
+  },
+
+  {
+    path: "login",
+    errorElement: <Error></Error>,
+    element: <Login></Login>,
+  },
+  {
+    path: "register",
+    errorElement: <Error></Error>,
+    element: <Register></Register>,
   },
 ]);
 

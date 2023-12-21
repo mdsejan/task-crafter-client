@@ -1,6 +1,12 @@
 import { NavLink } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
+  const { user, logOut } = useAuth();
+
+  const handleLogOut = () => {
+    logOut().then();
+  };
   const navLinks = (
     <>
       <li>
@@ -13,18 +19,20 @@ const Navbar = () => {
           About
         </NavLink>
       </li>
-      <li>
-        <NavLink to="/login" className="mr-2">
-          Login
-        </NavLink>
-      </li>
-      {/* {!user && (
+
+      {user && (
+        <li>
+          <a onClick={handleLogOut}>Logout</a>
+        </li>
+      )}
+
+      {!user && (
         <li>
           <NavLink to="/login" className="mr-2">
             Login
           </NavLink>
         </li>
-      )} */}
+      )}
     </>
   );
   return (
@@ -55,7 +63,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">TaskCrafter</a>
         </div>
         <div className="navbar-end hidden md:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
