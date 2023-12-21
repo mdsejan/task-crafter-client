@@ -1,6 +1,32 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const navLinks = (
+    <>
+      <li>
+        <NavLink to="/" className="mr-2">
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/about" className="mr-2">
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/login" className="mr-2">
+          Login
+        </NavLink>
+      </li>
+      {/* {!user && (
+        <li>
+          <NavLink to="/login" className="mr-2">
+            Login
+          </NavLink>
+        </li>
+      )} */}
+    </>
+  );
   return (
     <div className="bg-base-200">
       <div className="navbar max-w-screen-2xl mx-auto px-4">
@@ -26,49 +52,13 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {navLinks}
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>
         <div className="navbar-end hidden md:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <NavLink>Item 1</NavLink>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
       </div>
     </div>
