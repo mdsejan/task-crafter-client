@@ -21,9 +21,19 @@ const Navbar = () => {
       </li>
 
       {user && (
-        <li>
-          <a onClick={handleLogOut}>Logout</a>
-        </li>
+        <>
+          <li>
+            <NavLink to="/dashboard/user" className="mr-2">
+              Tasks
+            </NavLink>
+          </li>
+
+          <li>
+            <a onClick={handleLogOut} className="font-bold text-red-600">
+              Logout
+            </a>
+          </li>
+        </>
       )}
 
       {!user && (
@@ -36,7 +46,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="bg-base-200">
+    <div className="bg-white border-b">
       <div className="navbar max-w-screen-2xl mx-auto px-4">
         <div className="navbar-start">
           <div className="dropdown">
@@ -67,6 +77,17 @@ const Navbar = () => {
         </div>
         <div className="navbar-end hidden md:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+          <label className="btn btn-ghost btn-circle avatar ">
+            <div className="w-14 rounded-full ">
+              {user && (
+                <img
+                  alt={user?.displayName}
+                  src={user?.photoURL}
+                  className="w-full object-cover"
+                />
+              )}
+            </div>
+          </label>
         </div>
       </div>
     </div>

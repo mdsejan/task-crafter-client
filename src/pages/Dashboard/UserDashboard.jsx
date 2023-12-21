@@ -48,7 +48,7 @@ const UserDashboard = () => {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20 md:gap-6 p-10">
         <Droppable droppableId="todo">
           {(provided) => (
             <div
@@ -56,7 +56,10 @@ const UserDashboard = () => {
               ref={provided.innerRef}
               {...provided.droppableProps}
             >
-              <h1 className="text-center text-2xl font-semibold">Todo</h1>
+              <h1 className=" font-semibold flex  items-center  gap-2 tracking-widest md:tracking-[.2em] text-[#828fa3]">
+                <div className="rounded-full w-4 h-4 bg-red-500 "></div>Todo (4)
+              </h1>
+
               <div className="flex flex-col gap-5 mt-10">
                 {initialData.todo.map((task, index) => (
                   <Draggable key={task.id} draggableId={task.id} index={index}>
@@ -87,7 +90,10 @@ const UserDashboard = () => {
               ref={provided.innerRef}
               {...provided.droppableProps}
             >
-              <h1 className="text-center text-2xl font-semibold">Doing</h1>
+              <h1 className=" font-semibold flex  items-center  gap-2 tracking-widest md:tracking-[.2em] text-[#828fa3]">
+                <div className="rounded-full w-4 h-4 bg-yellow-500 "></div>Doing
+                (6)
+              </h1>
               <div className="flex flex-col gap-5 mt-10">
                 {initialData.doing.map((task, index) => (
                   <Draggable key={task.id} draggableId={task.id} index={index}>
@@ -118,7 +124,11 @@ const UserDashboard = () => {
               ref={provided.innerRef}
               {...provided.droppableProps}
             >
-              <h1 className="text-center text-2xl font-semibold">Done</h1>
+              <h1 className=" font-semibold flex  items-center  gap-2 tracking-widest md:tracking-[.2em] text-[#828fa3]">
+                <div className="rounded-full w-4 h-4 bg-blue-500 "></div>Done
+                (7)
+              </h1>
+
               <div className="flex flex-col gap-5 mt-10">
                 {initialData.done.map((task, index) => (
                   <Draggable key={task.id} draggableId={task.id} index={index}>
