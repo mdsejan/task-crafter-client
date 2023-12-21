@@ -1,10 +1,10 @@
-# TaskMaster - Efficient Task Management
+# TaskCrafter - Efficient Task Management
 
 This project is a task management platform that simplifies organizing, prioritizing, and tracking tasks, catering to diverse professional needs.
 
 ## Live Link
 
-[TaskMaster - Efficient Task Management](https://taskcrafter.netlify.app/)
+[TaskCrafter - Efficient Task Management](https://taskcrafter.netlify.app/)
 
 ---
 
@@ -14,7 +14,6 @@ This project is a task management platform that simplifies organizing, prioritiz
 
 - Register, log in, and log out functionalities
 - Google sign-in and multi-login system implemented
-- Profile creation with profile picture integration
 
 ### Task Management Dashboard
 
