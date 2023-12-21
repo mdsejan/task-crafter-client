@@ -1,5 +1,4 @@
 import { FaHouse } from "react-icons/fa6";
-import { RiMenuSearchFill } from "react-icons/ri";
 import { Link, NavLink, Outlet } from "react-router-dom";
 // import useAuth from "../../hooks/useAuth";
 const Dashboard = () => {
@@ -13,9 +12,7 @@ const Dashboard = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/all-package">
-          <RiMenuSearchFill /> All Package
-        </NavLink>
+        <NavLink to="/">Add New Task</NavLink>
       </li>
     </>
   );
