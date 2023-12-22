@@ -5,6 +5,7 @@ This project is a task management platform that simplifies organizing, prioritiz
 ## Live Link
 
 TaskCrafter - Live Site [click Here](https://taskcrafter.netlify.app/)
+
 TaskCrafter - Server Side Repo [click Here](https://github.com/mdsejan/task-crafter-server)
 
 ---
