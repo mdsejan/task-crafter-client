@@ -19,7 +19,7 @@ const Dashboard = () => {
 
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="w-64 min-h-screen bg-[#463BBC] text-white py-10 px-5 shadow-sm hidden lg:block">
+      <div className="w-64 min-h-screen bg-[#4734C0] text-white py-10 px-5 shadow-sm hidden lg:block">
         <div className="flex items-center bg-white rounded-3xl shadow-sm mb-8">
           <label className="btn btn-ghost btn-circle avatar m-1">
             <div className="w-14 rounded-full ">

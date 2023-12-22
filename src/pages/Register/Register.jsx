@@ -59,7 +59,7 @@ const Register = () => {
               <div className="text-center">
                 <button
                   onClick={handleGoogleLogin}
-                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#463BBC] hover:bg-[#463BBC] "
+                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#4734C0] hover:bg-[#4734C0] "
                 >
                   <img
                     className="w-4"
@@ -190,7 +190,7 @@ const Register = () => {
                 <div className="mb-4">
                   <button
                     type="submit"
-                    className=" flex items-center justify-center w-full text-white py-2 px-4 rounded-lg bg-[#463BBC] hover:bg-[#463BBC] focus:outline-none"
+                    className=" flex items-center justify-center w-full text-white py-2 px-4 rounded-lg bg-[#4734C0] hover:bg-[#4734C0] focus:outline-none"
                   >
                     Register
                   </button>
@@ -204,7 +204,7 @@ const Register = () => {
               <div>
                 <p className="mt-8 text-md">
                   Alredy have an Account?
-                  <Link to="/login" className="text-[#463BBC] font-bold ml-2">
+                  <Link to="/login" className="text-[#4734C0] font-bold ml-2">
                     Login
                   </Link>
                 </p>

@@ -75,7 +75,7 @@ const Login = () => {
               <div className="text-center">
                 <button
                   onClick={handleGoogleLogin}
-                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#463BBC] hover:bg-[#463BBC]"
+                  className="btn btn-outline w-full mt-4 capitalize font-bold text-[#4734C0] hover:bg-[#4734C0]"
                 >
                   <img
                     className="w-4"
@@ -150,7 +150,7 @@ const Login = () => {
                     className={`flex items-center justify-center w-full text-white py-2 px-4 rounded-lg ${
                       disabled
                         ? "bg-gray-300 hover:bg-gray-300 "
-                        : "bg-[#463BBC] hover:bg-[#463BBC]"
+                        : "bg-[#4734C0] hover:bg-[#4734C0]"
                     } focus:outline-none`}
                   >
                     Login
@@ -160,7 +160,7 @@ const Login = () => {
               <div>
                 <p className="mt-8 text-md">
                   New to this website? Please &nbsp;
-                  <Link to="/register" className="text-[#463BBC] font-bold">
+                  <Link to="/register" className="text-[#4734C0] font-bold">
                     Register
                   </Link>
                 </p>
