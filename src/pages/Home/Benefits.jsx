@@ -1,4 +1,9 @@
 import Container from "../../components/Container";
+import Card from "./card";
+import developer from "../../assets/developer-icon.png";
+import corporate from "../../assets/corporate-icon.png";
+import financial from "../../assets/financial-icon.png";
+import entrepreneur from "../../assets/entrepreneur-icon.png";
 
 const Benefits = () => {
   return (
@@ -15,6 +20,37 @@ const Benefits = () => {
             Empowering Various Professions
           </p>
         </div>
+
+        <section className="py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+            <Card
+              cardImg={developer}
+              title={"Developers"}
+              description={[
+                "Efficient Task Collaboration",
+                "Project Management Simplified",
+              ]}
+            />
+            <Card
+              cardImg={corporate}
+              title={"Corporate Professionals"}
+              description={[
+                "Enhanced Workflow Management",
+                "Time Optimization",
+              ]}
+            />
+            <Card
+              cardImg={financial}
+              title={"Bankers & Financial Experts"}
+              description={["Task Prioritization", "Seamless Task Handling"]}
+            />
+            <Card
+              cardImg={entrepreneur}
+              title={"Entrepreneurs & Business Owners"}
+              description={["Holistic Task Oversight", "Adaptability & Growth"]}
+            />
+          </div>
+        </section>
       </Container>
     </div>
   );
