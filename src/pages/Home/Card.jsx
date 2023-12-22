@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Card = ({ cardImg, title, description }) => {
   return (
-    <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full bg-white border border-gray-200 rounded-lg shadow">
       <div className="flex flex-col items-center p-10">
         <img
           className="w-20 h-20 mb-3 p-2 rounded-full shadow-md  border "
